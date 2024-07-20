@@ -8,6 +8,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Computer Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Computer+Modern:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -40,6 +42,13 @@
             color: #000000 !important; /* Change color on hover */
             background-color: #ffffff !important; /* Change background on hover */
             border-radius: 25px; /* Add rounded corners on hover */
+        }
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5); /* Light border color for the button */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            /* Change the color of the toggler icon to white */
         }
         .section {
             min-height: 100vh;
@@ -77,6 +86,16 @@
         #about {
             background-color: #e9ecef;
             color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        #about p {
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+            margin-bottom: 20px; /* Add margin between paragraphs */
+            font-size: 1.2rem; /* Increase font size */
+            font-family: 'Computer Modern', sans-serif; /* Use Computer Modern font */
         }
         #projects {
             background-color: #f8f9fa;
@@ -121,12 +140,12 @@
     </div>
 
     <div id="about" class="section">
-        <div class="title-container">
-            <div class="title">
-                À propos
-            </div>
-            <p>This is the about section.</p>
+        <div class="title">
+            À propos
         </div>
+        <p>Je suis un finissant du baccalauréat en ingénierie électrique avec une passion pour les systèmes embarqués, les télécommunications et l'analyse des signaux. Tout au long de mon parcours universitaire, j'ai développé une expertise dans la conception et l'implémentation de solutions innovantes, en combinant mes connaissances théoriques avec des applications pratiques.</p>
+        <p>Mon portfolio présente une sélection de projets que j'ai réalisés au cours de mes études, mettant en valeur mes compétences techniques et ma capacité à résoudre des problèmes complexes. Chaque projet reflète mon engagement à exceller dans le domaine de l'ingénierie électrique et à contribuer à des innovations technologiques significatives.</p>
+        <p>Explorez mes réalisations et découvrez comment mes compétences et mon expérience peuvent apporter de la valeur à votre organisation ou à vos projets personnels. N'hésitez pas à me contacter pour discuter de collaborations potentielles ou pour toute autre question.</p>
     </div>
 
     <div id="projects" class="section">
